@@ -4,7 +4,7 @@ import { ourService } from "./data";
 function Ourservices() {
   return (
     <div
-      className="flex flex-col w-full p-5"
+      className="flex flex-col w-full p-3"
       style={{
         backgroundImage:
           "url('https://www.familycarbuyers.com/wp-content/uploads/2023/01/24572776_sl_031520_28970_10-1-scaled.jpg')",
@@ -23,7 +23,7 @@ function Ourservices() {
           return (
             <div
               key={index}
-              className="flex flex-col lg:w-[300px] border rounded-md p-0 shadow-lg transition-shadow w-full"
+              className="flex flex-col lg:w-[320px] border rounded-md p-0 shadow-lg transition-shadow w-full"
               style={{
                 backgroundImage:
                   "url('https://www.familycarbuyers.com/wp-content/uploads/2023/01/2607293_4981.jpg')",
@@ -50,11 +50,11 @@ function Ourservices() {
 
 export default Ourservices;
 const ContainerGrid = styled.div`
-  width: 98%;
+  width: 100%;
   margin: 10px 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
+  gap: 30px;
   grid-column-start: auto;
   padding: 20px;
   place-items: center;
