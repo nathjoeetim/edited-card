@@ -1,9 +1,14 @@
 import styled from "styled-components";
 import parts from "@/assets/parts-2.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function AboutUs() {
   const phoneNumber = " +4048900083";
-
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  });
   return (
     <AboutContainer id="about" className="flex flex-row w-[98%] p-2 gap-10">
       {/* <ContactFormComponent /> */}
@@ -61,7 +66,7 @@ function AboutUs() {
           <h4 className="text-2xl text-slate-900 font-bold underline">
             We purchase Car Parts
           </h4>
-          <img src={parts} alt="woman with cash " />
+          <img data-aos="zoom-in" src={parts} alt="woman with cash " />
           <p>We purchase car parts at a friendly price </p>
         </div>
       </div>
