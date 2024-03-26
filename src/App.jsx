@@ -9,10 +9,12 @@ import ContactFormComponent from "./components/from";
 import NavigationBar from "./components/navigationBar";
 import Ourservices from "./components/ourService";
 import WhoWeAreComponent from "./components/whoweAre";
+import { Toaster } from "sonner";
 
 function App() {
   return (
     <div className="flex flex-col max-w-[1300px] w-full font-serif">
+      <Toaster />
       <NavigationBar />
       <BannerComponent />
       {/* <AlertDialog /> */}
