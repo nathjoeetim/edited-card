@@ -10,7 +10,7 @@ function WhoWeAreComponent() {
       <span className="text-red-500 font-bold text-xs font-sans">
         WHO WE ARE
       </span>
-      <h2 className="text-slate-950 font-bold text-xl lg:text-4xl">
+      <h2 className="text-slate-950 font-bold text-2xl lg:text-4xl">
         Get Cash For Junk Cars - Fast & Easy
       </h2>
       <p className="text-lg lg:text-2xl font-medium text-justify">

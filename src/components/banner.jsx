@@ -1,5 +1,6 @@
 import { AlertDialog } from "./alertDialog";
 import { Button } from "./ui/button";
+import { dialPhoneNumber } from "./util/call";
 
 function BannerComponent() {
   return (
@@ -19,7 +20,10 @@ function BannerComponent() {
               Contact us today to get cash for your car!
             </span>
           </p>
-          <Button className="bg-violet-700"> Call Now </Button>
+          <Button className="bg-violet-700" onClick={dialPhoneNumber}>
+            {" "}
+            Call Now{" "}
+          </Button>
           <AlertDialog />
         </div>
         {/* <div className="hidden flex-1 lg:flex justify-end items-end">
