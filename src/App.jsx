@@ -19,7 +19,7 @@ function App() {
       <WhoWeAreComponent />
       <Ourservices />
       <AboutUs />
-      <div className="flex flex-col lg:flex-row gap-2 w-full p-10">
+      <div className="flex flex-col lg:flex-row gap-5 w-full p-5">
         <ContactFormComponent />
         <div className="flex flex-col items-start justify-start gap-5 w-full">
           <div className="flex flex-col items-start sm:items-center md:items-center lg:items-start w-full pr-5">

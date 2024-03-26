@@ -1,7 +1,7 @@
 function WhoWeAreComponent() {
   return (
     <div
-      className="flex flex-col gap-4 p-10 items-start justify-start"
+      className="flex flex-col gap-4 p-5 lg:p-10 items-start justify-start text-justify"
       style={{
         backgroundImage:
           "url('https://www.familycarbuyers.com/wp-content/uploads/2023/01/24572776_sl_031520_28970_10-1-scaled.jpg')",
@@ -10,10 +10,10 @@ function WhoWeAreComponent() {
       <span className="text-red-500 font-bold text-xs font-sans">
         WHO WE ARE
       </span>
-      <h2 className="text-slate-950 font-bold text-2xl lg:text-4xl">
+      <h2 className="text-slate-950 font-bold text-xl lg:text-4xl">
         Get Cash For Junk Cars - Fast & Easy
       </h2>
-      <p className="text-lg lg:text-2xl font-medium text-center lg:text-justify">
+      <p className="text-lg lg:text-2xl font-medium text-justify">
         Looking to get rid of your old car? Look no further! At Ari-Car, we
         specialize in purchasing junk cars and offering cash on the spot, with
         free towing included! But that&apos;s not all - we also buy running
