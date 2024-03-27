@@ -28,7 +28,7 @@ function BannerComponent() {
           <AlertDialog />
         </div>
       </div>
-      <div className="hidden lg:flex lg:flex-1 items-center justify-end h-[400px] bg-slate-600 p-7 shadow-xl">
+      <div className="hidden lg:flex lg:flex-1 items-center justify-end h-[400px] p-7">
         <img
           src={bannerImg}
           alt="house banner"
