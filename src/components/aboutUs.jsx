@@ -3,20 +3,24 @@ import parts from "@/assets/parts-2.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { dialPhoneNumber } from "./util/call";
+import { Button } from "./ui/button";
 
 function AboutUs() {
-  const phoneNumber = " +4048900083";
   useEffect(() => {
     Aos.init({ duration: 2000 });
   });
   return (
-    <AboutContainer id="about" className="flex flex-row w-[98%] p-2 gap-10">
+    <AboutContainer id="about" className="flex flex-row w-[98%] p-4 gap-10">
       {/* <ContactFormComponent /> */}
       <div className="flex flex-col gap-7 ">
-        <div className="flex flex-col items-center justify-center bg-slate-400 w-[180px] h-10 rounded-sm">
-          <a className="" href={`tel:${phoneNumber}`}>
-            +4048900083
-          </a>
+        <div className="flex flex-col items-start sm:items-center md:items-center lg:items-start w-full pr-5">
+          <span className="text-red-500 font-bold text-xs lg:text-sm font-sans mb-2 lg:mb-0">
+            Know More
+          </span>
+          <h2 className="text-slate-950 font-bold text-2xl lg:text-4xl">
+            About Us
+          </h2>
         </div>
         <p className="flex flex-col text-justify font-sans font-medium">
           Ari-cash for Cars stands as a premier junk car buyer in Georgia,
@@ -62,6 +66,15 @@ function AboutUs() {
           give us a call at+4048900083, and we&apos;ll address all your
           inquiries.
         </p>
+        <div className="w-full flex flex-row justify-end">
+          <Button
+            className="bg-violet-700 hover:shadow-lg"
+            onClick={dialPhoneNumber}
+          >
+            {" "}
+            Call Now{" "}
+          </Button>
+        </div>
         <div className="flex flex-col w-full text-slate-600 gap-5 items-center justify-center">
           <h4 className="text-2xl text-slate-900 font-bold underline">
             We purchase Car Parts
