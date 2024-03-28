@@ -5,7 +5,7 @@ import bannerImg from "../assets/bannerImg.jpg";
 
 function BannerComponent() {
   return (
-    <section className=" flex flex-row items-center max-h-[640px] py-5 md:p-10 lg:p-3 lg:h-[90vh] bg-[#FEECEB] gap-5">
+    <section className=" flex flex-col lg:flex-row items-center lg:max-h-[640px] py-5 md:p-10 lg:p-3 lg:h-[90vh] bg-[#FEECEB] gap-5 pb-10">
       <div className="flex flex-col lg:flex-row  lg:flex-1 mx-auto">
         <div className="flex flex-col items-center lg:items-center text-center lg:text-left justify-center flex-1 px-4 lg:px-0  mx-auto">
           <h1 className="text-4xl lg:text-[50px] lg:text-left font-semibold leading-none mb-6 text-center">
@@ -28,11 +28,11 @@ function BannerComponent() {
           <AlertDialog />
         </div>
       </div>
-      <div className="hidden lg:flex lg:flex-1 items-center justify-end h-[400px] p-7">
+      <div className="flex lg:flex-1 items-center justify-end h-[400px] p-7">
         <img
           src={bannerImg}
           alt="house banner"
-          className="w-full h-[400px] shadow-2xl rounded-tl-[100px]"
+          className="w-full h-[400px] shadow-2xl rounded-md lg:rounded-tl-[100px]"
         />
       </div>
     </section>

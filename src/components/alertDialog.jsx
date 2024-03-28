@@ -10,7 +10,7 @@ export function AlertDialog() {
   });
   return (
     <Alert
-      className="w-[100%] lg:w-[600px] mx-auto mt-10 bg-red-100"
+      className="w-[100%] lg:w-[600px] sm:w-full mx-auto mt-10 bg-red-100"
       data-aos="fade-up"
       data-aos-anchor-placement="top-bottom"
     >
